@@ -1,0 +1,26 @@
+.homeCard{
+    height: 60vh;
+    width: 90vw;
+}
+
+.homeCard div:nth-child(1){
+    background-color: #f6e6ff;
+    width: 65vw;
+}
+
+.homeCard div:nth-child(2){
+    background-color: #fffbe6;
+    width: 35vw;
+}
+
+.homeCard div:nth-child(1)>h1{
+    color: #4E4E4E;
+}
+
+.homeCard div:nth-child(1)>h2{
+    color: #6E2594;
+}
+
+.homeCard div:nth-child(1)>p{
+    color: #4E4E4E;
+}
