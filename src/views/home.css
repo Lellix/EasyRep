@@ -1,16 +1,26 @@
 .homeCard{
-    height: 60vh;
-    width: 90vw;
+    height: 52vh;
+    width: 85vw;
+    
+}
+
+.linha{    
+    width: 50%;
+    height: 1vh;
+    box-shadow: 0px 15px #fec601;
+    border-radius: 50vw;
 }
 
 .homeCard div:nth-child(1){
-    background-color: #f6e6ff;
-    width: 65vw;
+    /* background-color: #f6e6ff; */
+    /* box-shadow: -10px 0px #fec601; */
+    width: 60vw;
+    
 }
 
 .homeCard div:nth-child(2){
-    background-color: #fffbe6;
-    width: 35vw;
+    /* background-color: #fffbe6; */
+    width: 40vw;
 }
 
 .homeCard div:nth-child(1)>h1{
@@ -23,4 +33,11 @@
 
 .homeCard div:nth-child(1)>p{
     color: #4E4E4E;
+    width: 40vw;
+    
+}
+
+.img1{
+    height: auto;
+    width: 60%;
 }

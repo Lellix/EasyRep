@@ -23,5 +23,13 @@ code {
 }
 
 p{
-  font-size: 16pt;
+  font-size: 20pt;
+}
+
+h2{
+  font-size: 18pt;
+}
+
+h1{
+  line-height: 110%;
 }
