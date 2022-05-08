@@ -42,10 +42,8 @@ const About = () =>{
                                                                         <br/>forma descomplicada
                                                                         <br/>com o EasyRep ;) </p>
                     </div>
-
                 </div>
             </nav>
-
         </>
     )
 }
