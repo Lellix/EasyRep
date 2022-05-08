@@ -3,23 +3,49 @@ import React from "react";
 const About = () =>{
     return(
         <>
-             <nav className="is-flex is-justify-content-center baloo2">
-                <div className="about px-6 is-flex is-flex-direction-row is-justify-content-center is-align-content-center">
-                    <div className="pl-6 is-flex is-flex-direction-column is-flex-grow-1 is-justify-content-center is-align-content-center">                       
-                        <img className="img1" src={require("./../assets/img/EasyRep_PoltronaEstante.png")}></img>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <div className="is-flex baloo2 is-justify-content-center pt-6">
+                <div className="conteudo">
+                    <h1 className="is-size-4 has-text-weight-semibold">Loren ipsum dolor sit amet, consecteur</h1>
+                </div>
+            </div>
+            <nav className="is-flex baloo2 is-justify-content-center">
+                <div className="about px-6 is-flex is-flex-direction-row">
+                    <div className="info is-align-items-center is-flex is-flex-direction-column is-flex-grow-1 ">                       
+                        <div className="imagem is-flex is-align-content-end">
+                            <img className="imgs" src={require("./../assets/img/EasyRep_MoçaSentadaComPCnochao.png")}></img>
+                        </div>
+                        <h1 className="titulos is-size-4 has-text-weight-semibold py-3">Anuncie</h1>
+                        <p className="texto has-text-centered is-size-5">Tá sobrando uma vaga
+                                                                         <br/> aí na sua república?
+                                                                         <br/> Anuncie sua vaga de 
+                                                                         <br/> maneira simples e 
+                                                                         <br/> descomplicada! </p>
                     </div>
-                    <div className="is-align-items-center is-flex is-flex-direction-column is-flex-grow-1 is-justify-content-end mb-5">
-                        <img className="img1" src={require("./../assets/img/EasyRep_PoltronaEstante.png")}></img>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <div className="info is-align-items-center is-flex is-flex-direction-column is-flex-grow-1 ">
+                        <div className="imagem is-flex is-align-content-end">
+                            <img className="imgs" src={require("./../assets/img/EasyRep_CaraSentadoComputador.png")}></img>
+                        </div>
+                        <h1 className="titulos is-size-4 has-text-weight-semibold py-3">Visite</h1>
+                        <p className="texto has-text-centered is-size-5">Você pode agendar
+                                                                        <br/>sem compromisso
+                                                                        <br/>uma visita  à uma 
+                                                                        <br/>república! </p>
                     </div>
-                    <div className="is-align-items-center is-flex is-flex-direction-column is-flex-grow-1 is-justify-content-end mb-5">
-                        <img className="img1" src={require("./../assets/img/EasyRep_PoltronaEstante.png")}></img>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <div className="info is-align-items-center is-flex is-flex-direction-column is-flex-grow-1">
+                        <div className="imagem is-flex is-align-content-end">
+                            <img className="imgs" src={require("./../assets/img/EasyRep_Sofa.png")}></img>
+                        </div>
+                        <h1 className="titulos is-size-4 has-text-weight-semibold py-3">Alugue</h1>
+                        <p className="texto has-text-centered is-size-5">Pesquisou e achou a 
+                                                                        <br/>república ideal? Eba!
+                                                                        <br/>Alugue vagas de 
+                                                                        <br/>forma descomplicada
+                                                                        <br/>com o EasyRep ;) </p>
                     </div>
 
                 </div>
             </nav>
+
         </>
     )
 }

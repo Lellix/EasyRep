@@ -72,3 +72,35 @@
 .buscar{
     width: 15vw;
 }
+
+.info{
+    width: 25vw;
+    margin: 1em;
+}
+
+.imagem{
+    width: 20vw;
+    height: 20vh;
+}
+
+.img{
+    width: 80%;
+    height: auto;
+}
+
+.titulos{
+    color: #6E2594;
+}
+
+.texto{
+    color:#4E4E4E; 
+}
+
+.conteudo{
+    width: 75%;
+}
+
+.about{
+    box-shadow: 7px 7px 1px #fec601;
+    border-radius: 7px;
+}
