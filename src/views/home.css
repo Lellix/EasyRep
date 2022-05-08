@@ -1,6 +1,6 @@
 .homeCard{
     height: 52vh;
-    width: 85vw;
+    width: 92vw;
     
 }
 
@@ -40,4 +40,35 @@
 .img1{
     height: auto;
     width: 60%;
+}
+
+.repCards{
+    width: 87vw;
+}
+
+.card{
+    width: 35%;
+    margin: 1em;
+}
+
+.sobre{
+    width: 100%;
+}
+
+.icones{
+    width: 35%;
+}
+
+.cidade{
+    width: 46vw;
+    margin-right: 1em;
+}
+
+.tipo{
+    width: 14vw;
+    margin-right: 1em;
+}
+
+.buscar{
+    width: 15vw;
 }
