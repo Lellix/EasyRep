@@ -36,7 +36,37 @@ const Rep = () =>{
                 </div>
             </nav>
 
-            <Cards/>
+            <nav className="is-flex is-justify-content-center baloo2">
+                <div className="repCards px-6 is-flex is-flex-direction-row is-justify-content-center is-align-content-center">
+                    <Cards nome={'República Xeruléu'}
+                            rua={'Pererê Paraná'} 
+                            numero={666} 
+                            bairro={'Na Nave'} 
+                            estado={'EC'} 
+                            moradores={5} 
+                            rep={'r'} 
+                            tipo={'fem'}
+                            imagem={'https://bulma.io/images/placeholders/1280x960.png'}/>
+                    <Cards nome={'República Xablau'} 
+                            rua={'Pererê Paraná'} 
+                            numero={666} 
+                            bairro={'Na Nave'} 
+                            estado={'EC'} 
+                            moradores={3} 
+                            rep={'p'} 
+                            tipo={'masc'}
+                            imagem={'https://bulma.io/images/placeholders/1280x960.png'}/>
+                    <Cards nome={'República Xulép'} 
+                            rua={'Pererê Paraná'} 
+                            numero={666} 
+                            bairro={'Na Nave'} 
+                            estado={'EC'} 
+                            moradores={10} 
+                            rep={'r'} 
+                            tipo={'mista'}
+                            imagem={'https://bulma.io/images/placeholders/1280x960.png'}/>
+                </div>
+            </nav>
         </>
     )
 }

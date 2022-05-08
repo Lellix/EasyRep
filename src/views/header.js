@@ -20,7 +20,7 @@ const Header = () => {
                     <div className="linhaVertical mt-2"/>
 
                     <div className="navbar-item">
-                        <button className="button baloo2 has-text-weight-bold buttonLogin" style={{background: "#fec601", color: "#F6F6F6"}}>LOGIN</button>
+                        <button className="button is-white baloo2 has-text-weight-bold buttonLogin" style={{background: "#fec601", color: "#F6F6F6"}}>LOGIN</button>
                     </div>
                 </div>
                 
