@@ -5,8 +5,9 @@ import "bulma/css/bulma.min.css"
 
 import Header from './views/header';
 import Home from './views/home';
-import Rep from './views/rep'
-import About from './views/About'
+import Rep from './views/rep';
+import About from './views/About';
+import Footer from './views/footer'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
     <Home/>
     <Rep/>
     <About/>
+    <Footer/>
   </React.StrictMode>
 );
 
