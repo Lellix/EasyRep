@@ -25,36 +25,36 @@ const SignUp = () => {
                         </div>
 
                         <div className="field "> 
-                            <div class="control">
-                                <input class="input is-medium" type="text" placeholder="digite o nome da república"/>
+                            <div className="control">
+                                <input className="input is-medium" type="text" placeholder="digite o nome da república"/>
                             </div>
                         </div>
 
                         <div className="field"> 
-                            <div class="control">
-                                <input class="input is-medium" type="email" placeholder="e-mail"/>
+                            <div className="control">
+                                <input className="input is-medium" type="email" placeholder="e-mail"/>
                             </div>
                         </div>
 
                         <div className="is-flex is-flex-direction-row is-justify-content-center">
-                            <div class="field is-flex-grow-1 mr-1"> 
-                                <div class="control">
-                                    <input class="input is-medium" type="password" placeholder="senha"/>
+                            <div className="field is-flex-grow-1 mr-1"> 
+                                <div className="control">
+                                    <input className="input is-medium" type="password" placeholder="senha"/>
                                 </div>
                             </div>
 
-                            <div class="field is-flex-grow-1 ml-1"> 
-                                <div class="control ">
-                                    <input class="input is-medium" type="password" placeholder="confirme a senha"/>
+                            <div className="field is-flex-grow-1 ml-1"> 
+                                <div className="control ">
+                                    <input className="input is-medium" type="password" placeholder="confirme a senha"/>
                                 </div>
                             </div>
                         </div>
 
                         <div className="is-flex is-flex-direction-row is-justify-content-center">
-                            <div class="field">
-                                <div class="control">
-                                    <div class="select is-medium">
-                                        <select class="tipo">
+                            <div className="field">
+                                <div className="control">
+                                    <div className="select is-medium">
+                                        <select className="tipo">
                                             <option>Tipo</option>
                                             <option>Feminina</option>
                                             <option>Masculina</option>
@@ -64,10 +64,10 @@ const SignUp = () => {
                                 </div>
                             </div>
                                 
-                            <div class="field">
-                                        <div class="control">
-                                            <div class="select is-medium">
-                                                <select class="regime">
+                            <div className="field">
+                                        <div className="control">
+                                            <div className="select is-medium">
+                                                <select className="regime">
                                                     <option>Regime</option>
                                                     <option>Tradicional</option>
                                                     <option>Não Tradicional</option>
@@ -81,13 +81,13 @@ const SignUp = () => {
                         </div>
 
                         <div className="file is-light is-medium mt-2">
-                            <label class="file-label">
-                                <input class="file-input" type="file" name="resume"/>
-                                <span class="file-cta">
-                                <span class="file-icon">
-                                    <i class="fas fa-upload"></i>
+                            <label className="file-label">
+                                <input className="file-input" type="file" name="resume"/>
+                                <span className="file-cta">
+                                <span className="file-icon">
+                                    <i className="fas fa-upload"></i>
                                 </span>
-                                <span class="file-label">
+                                <span className="file-label">
                                     Selecione uma foto…
                                 </span>
                                 </span>
@@ -103,44 +103,44 @@ const SignUp = () => {
                         </div>
                     </div>
 
-                    <div class="is-flex is-flex-direction-row is-justify-content-center">
-                        <div class="field is-flex-grow-5"> 
-                            <div class="control">
-                                <input class="input is-medium mr-1" type="text" placeholder="endereço"/>
+                    <div className="is-flex is-flex-direction-row is-justify-content-center">
+                        <div className="field is-flex-grow-5"> 
+                            <div className="control">
+                                <input className="input is-medium mr-1" type="text" placeholder="endereço"/>
                             </div>
                         </div>
 
-                        <div class="field is-flex-grow-1"> 
-                            <div class="control">
-                                <input class="input is-medium ml-1" type="text" placeholder="número"/>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="is-flex is-flex-direction-row is-justify-content-center">
-                        <div class="field is-flex-grow-1"> 
-                            <div class="control">
-                                <input class="input is-medium mr-1" type="text" placeholder="bairro"/>
-                            </div>
-                        </div>
-
-                        <div class="field is-flex-grow-1"> 
-                            <div class="control">
-                                <input class="input is-medium ml-1" type="text" placeholder="complemento"/>
+                        <div className="field is-flex-grow-1"> 
+                            <div className="control">
+                                <input className="input is-medium ml-1" type="text" placeholder="número"/>
                             </div>
                         </div>
                     </div>
 
-                    <div class="is-flex is-flex-direction-row is-justify-content-center">
-                        <div class="field is-flex-grow-1"> 
-                            <div class="control">
-                                <input class="input is-medium mr-1" type="text" placeholder="cidade"/>
+                    <div className="is-flex is-flex-direction-row is-justify-content-center">
+                        <div className="field is-flex-grow-1"> 
+                            <div className="control">
+                                <input className="input is-medium mr-1" type="text" placeholder="bairro"/>
                             </div>
                         </div>
 
-                        <div class="field is-flex-grow-1"> 
-                            <div class="control">
-                                <input class="input is-medium ml-1" type="text" placeholder="cep"/>
+                        <div className="field is-flex-grow-1"> 
+                            <div className="control">
+                                <input className="input is-medium ml-1" type="text" placeholder="complemento"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="is-flex is-flex-direction-row is-justify-content-center">
+                        <div className="field is-flex-grow-1"> 
+                            <div className="control">
+                                <input className="input is-medium mr-1" type="text" placeholder="cidade"/>
+                            </div>
+                        </div>
+
+                        <div className="field is-flex-grow-1"> 
+                            <div className="control">
+                                <input className="input is-medium ml-1" type="text" placeholder="cep"/>
                             </div>
                         </div>
                     </div>
@@ -154,17 +154,17 @@ const SignUp = () => {
                         </div>
                     </div>
 
-                    <div class="is-flex is-flex-direction-row is-justify-content-center">
-                        <div class="field is-flex-grow-1"> 
-                            <div class="control">
-                                <input class="input is-medium mr-1" type="text" placeholder="valor médio (contas/pessoa)"/>
+                    <div className="is-flex is-flex-direction-row is-justify-content-center">
+                        <div className="field is-flex-grow-1"> 
+                            <div className="control">
+                                <input className="input is-medium mr-1" type="text" placeholder="valor médio (contas/pessoa)"/>
                             </div>
                         </div>
 
-                        <div class="field is-flex-grow-1">
-                            <div class="control">
-                                <div class="select is-medium ml-1">
-                                    <select class="tipo">
+                        <div className="field is-flex-grow-1">
+                            <div className="control">
+                                <div className="select is-medium ml-1">
+                                    <select className="tipo">
                                         <option>política de limpeza</option>
                                         <option>Diarista</option>
                                         <option>Empregada</option>
@@ -175,30 +175,30 @@ const SignUp = () => {
                         </div>
                     </div>
 
-                    <div class="is-flex is-flex-direction-row">  
-                        <div class="is-flex is-flex-direction-column is-flex-grow-1">  
-                            <div class="field is-flex-grow-1">
+                    <div className="is-flex is-flex-direction-row">  
+                        <div className="is-flex is-flex-direction-column is-flex-grow-1">  
+                            <div className="field is-flex-grow-1">
                                 <label>há acesso à cozinha?</label>
-                                <div class="control">
-                                    <label class="radio">
+                                <div className="control">
+                                    <label className="radio">
                                     <input type="radio" name="question"/>
                                     Yes
                                     </label>
-                                    <label class="radio">
+                                    <label className="radio">
                                     <input type="radio" name="question"/>
                                     No
                                     </label>
                                 </div>
                             </div>
 
-                            <div class="field is-flex-grow-1">
+                            <div className="field is-flex-grow-1">
                                 <label>há acesso à lavanderia?</label>
-                                <div class="control">
-                                    <label class="radio">
+                                <div className="control">
+                                    <label className="radio">
                                     <input type="radio" name="question"/>
                                     Yes
                                     </label>
-                                    <label class="radio">
+                                    <label className="radio">
                                     <input type="radio" name="question"/>
                                     No
                                     </label>
@@ -206,29 +206,29 @@ const SignUp = () => {
                             </div>
                         </div>
 
-                        <div class="is-flex is-flex-direction-column is-flex-grow-1 ml-3">  
-                            <div class="field is-flex-grow-1">
+                        <div className="is-flex is-flex-direction-column is-flex-grow-1 ml-3">  
+                            <div className="field is-flex-grow-1">
                                 <label>tem ou aceita pets?</label>
-                                <div class="control">
-                                    <label class="radio">
+                                <div className="control">
+                                    <label className="radio">
                                     <input type="radio" name="question"/>
                                     Yes
                                     </label>
-                                    <label class="radio">
+                                    <label className="radio">
                                     <input type="radio" name="question"/>
                                     No
                                     </label>
                                 </div>
                             </div>
 
-                            <div class="field is-flex-grow-1">
+                            <div className="field is-flex-grow-1">
                                 <label>possui garagem?</label>
-                                <div class="control">
-                                    <label class="radio">
+                                <div className="control">
+                                    <label className="radio">
                                     <input type="radio" name="question"/>
                                     Yes
                                     </label>
-                                    <label class="radio">
+                                    <label className="radio">
                                     <input type="radio" name="question"/>
                                     No
                                     </label>
