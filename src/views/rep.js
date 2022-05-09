@@ -8,17 +8,17 @@ const Rep = () =>{
             <nav className="is-flex is-justify-content-center baloo2">
                 <div className="busca is-flex is-flex-direction-row">
 
-                    <div class="field is-grouped">
-                        <div class="cidade field">
-                            <div class="control baloo2">
-                                <input class="input" type="text" placeholder="Digite o nomde da cidade ou da república"/>
+                    <div className="field is-grouped">
+                        <div className="cidade field">
+                            <div className="control baloo2">
+                                <input className="input" type="text" placeholder="Digite o nomde da cidade ou da república"/>
                             </div>
                         </div>
 
-                        <div class="field baloo2">
-                            <div class="control">
-                                <div class="select">
-                                    <select class="tipo">
+                        <div className="field baloo2">
+                            <div className="control">
+                                <div className="select">
+                                    <select className="tipo">
                                         <option>Tipo</option>
                                         <option>Feminina</option>
                                         <option>Masculina</option>
@@ -28,8 +28,8 @@ const Rep = () =>{
                             </div>
                         </div>
 
-                        <div class="control baloo2">
-                            <button class="buscar button is-link" style={{background: "#6E2594", color: "#F6F6F6"}}>BUSCAR</button>
+                        <div className="control baloo2">
+                            <button className="buscar button is-link" style={{background: "#6E2594", color: "#F6F6F6"}}>BUSCAR</button>
                         </div>
 
                     </div>

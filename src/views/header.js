@@ -13,21 +13,21 @@ const Header = () => {
         <>
             <nav className="navbar">
                 <div className="navbar-brand">
-                    <a className="navbar-item">
+                    <div className="navbar-item">
                         <Link to="/">
                             <h1 className = "baloobhaijaan logo has-text-weight-bold is-size-3 pl-5 mt-2">EASY<span>REP</span></h1> 
                         </Link>
                            
-                    </a>
+                    </div>
                 </div>
 
                 <div className="navbar-end pr-5">
-                    <a className="navbar-item baloo2">
+                    <div className="navbar-item baloo2">
                         <Link to="/SignUp">
                             <h2 className="has-text-weight-medium" style={{color: "#4E4E4E"}}>CADASTRE-SE</h2>
                         </Link>
 
-                    </a>
+                    </div>
 
                     <div className="linhaVertical mt-2"/>
 

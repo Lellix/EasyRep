@@ -23,14 +23,14 @@ const Login = (props) => {
                                 <p className="has-text-weight-bold">LOGIN</p>
                         </div>
                     
-                        <div class="field">
-                            <p class="control">
-                                <input class="input" type="email" placeholder="Email"/>
+                        <div className="field">
+                            <p className="control">
+                                <input className="input" type="email" placeholder="Email"/>
                             </p>
                         </div>
-                        <div class="field">
-                            <p class="control">
-                                <input class="input" type="password" placeholder="Password"/>
+                        <div className="field">
+                            <p className="control">
+                                <input className="input" type="password" placeholder="Password"/>
                             </p>
                         </div>
                         <div className="is-flex is-justify-content-center is-flex-direction-column">
@@ -38,9 +38,9 @@ const Login = (props) => {
                                     style={{background: "#fec601", color: "#4e4e4e"}}>
                                         ENTRAR  
                             </button>
-                            <a className="navbar-item baloo2 is-justify-content-end">
+                            <div className="navbar-item baloo2 is-justify-content-end">
                                 <h2 className="" style={{color: "#4E4E4E"}}>esqueci minha senha</h2>
-                            </a>
+                            </div>
                         </div> 
                     </div>
                 </div>
