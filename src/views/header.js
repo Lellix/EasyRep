@@ -2,6 +2,7 @@ import React from "react"
 import "./header.css"
 import "./../components/modal"
 import Login from "./../components/login"
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const closeAndOpenModal =() =>{
@@ -13,13 +14,19 @@ const Header = () => {
             <nav className="navbar">
                 <div className="navbar-brand">
                     <a className="navbar-item">
-                        <h1 className = "baloobhaijaan logo has-text-weight-bold is-size-3 pl-5 mt-2">EASY<span>REP</span></h1>    
+                        <Link to="/">
+                            <h1 className = "baloobhaijaan logo has-text-weight-bold is-size-3 pl-5 mt-2">EASY<span>REP</span></h1> 
+                        </Link>
+                           
                     </a>
                 </div>
 
                 <div className="navbar-end pr-5">
                     <a className="navbar-item baloo2">
-                        <h2 className="has-text-weight-medium" style={{color: "#4E4E4E"}}>CADASTRE-SE</h2>
+                        <Link to="/SignUp">
+                            <h2 className="has-text-weight-medium" style={{color: "#4E4E4E"}}>CADASTRE-SE</h2>
+                        </Link>
+
                     </a>
 
                     <div className="linhaVertical mt-2"/>
