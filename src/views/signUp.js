@@ -26,7 +26,7 @@ const SignUp = () => {
 
                         <div className="field "> 
                             <div class="control">
-                                <input class="input is-medium" type="text" placeholder="digite o nome da república"/>
+                                <input class="input is-medium" type="text" placeholder="digite o NÃOme da república"/>
                             </div>
                         </div>
 
@@ -178,29 +178,29 @@ const SignUp = () => {
                     <div class="is-flex is-flex-direction-row">  
                         <div class="is-flex is-flex-direction-column is-flex-grow-1">  
                             <div class="field is-flex-grow-1">
-                                <label>há acesso à cozinha?</label>
+                                <label className="has-text-weight-semibold">tem acesso à cozinha?</label>
                                 <div class="control">
                                     <label class="radio">
-                                    <input type="radio" name="question"/>
-                                    Yes
+                                    <input type="radio" name="question1"/>
+                                    SIM
                                     </label>
                                     <label class="radio">
-                                    <input type="radio" name="question"/>
-                                    No
+                                    <input type="radio" name="question1"/>
+                                    NÃO
                                     </label>
                                 </div>
                             </div>
 
                             <div class="field is-flex-grow-1">
-                                <label>há acesso à lavanderia?</label>
+                                <label className="has-text-weight-semibold">tem acesso à lavanderia?</label>
                                 <div class="control">
                                     <label class="radio">
-                                    <input type="radio" name="question"/>
-                                    Yes
+                                    <input type="radio" name="question2"/>
+                                    SIM
                                     </label>
                                     <label class="radio">
-                                    <input type="radio" name="question"/>
-                                    No
+                                    <input type="radio" name="question2"/>
+                                    NÃO
                                     </label>
                                 </div>
                             </div>
@@ -208,29 +208,29 @@ const SignUp = () => {
 
                         <div class="is-flex is-flex-direction-column is-flex-grow-1 ml-3">  
                             <div class="field is-flex-grow-1">
-                                <label>tem ou aceita pets?</label>
+                                <label className="has-text-weight-semibold">tem ou aceita pets?</label>
                                 <div class="control">
                                     <label class="radio">
-                                    <input type="radio" name="question"/>
-                                    Yes
+                                    <input type="radio" name="question3"/>
+                                    SIM
                                     </label>
                                     <label class="radio">
-                                    <input type="radio" name="question"/>
-                                    No
+                                    <input type="radio" name="question3"/>
+                                    NÃO
                                     </label>
                                 </div>
                             </div>
 
                             <div class="field is-flex-grow-1">
-                                <label>possui garagem?</label>
+                                <label className="has-text-weight-semibold">possui garagem?</label>
                                 <div class="control">
                                     <label class="radio">
-                                    <input type="radio" name="question"/>
-                                    Yes
+                                    <input type="radio" name="question4"/>
+                                    SIM
                                     </label>
                                     <label class="radio">
-                                    <input type="radio" name="question"/>
-                                    No
+                                    <input type="radio" name="question4"/>
+                                    NÃO
                                     </label>
                                 </div>
                             </div>
