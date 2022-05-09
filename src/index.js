@@ -9,12 +9,12 @@ import Rep from './views/rep';
 import About from './views/About';
 import Footer from './views/footer'
 
-import Routes from './routers';
+import App from './routers';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Routes />
+    <App />
   </React.StrictMode>
 );
 

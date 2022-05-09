@@ -1,19 +1,20 @@
 import React from "react";
-import { Route, BrowserRouter } from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 import Home from "./screen/Home";
 import Login from './screen/login';
 import SignUp from './views/signUp';
 
 
-const Routes = () => {
+const App = () => {
    return(
-       <SignUp/>
-    //    <BrowserRouter>
-    //        <Route component = { Home }  path="/" exact={true}/>
-    //        <Route component = { Login }  path="/login" />
-    //    </BrowserRouter>
+      //  <SignUp/>
+      <BrowserRouter>
+         <Routes>
+            <Route component = { Home }  path="/" exact={true}/>
+         </Routes>
+      </BrowserRouter>
    )
 }
 
-export default Routes;
+export default App;
