@@ -181,12 +181,12 @@ const SignUp = () => {
                                 <label>há acesso à cozinha?</label>
                                 <div className="control">
                                     <label className="radio">
-                                    <input type="radio" name="question"/>
-                                    Yes
+                                    <input type="radio" name="question1"/>
+                                    SIM
                                     </label>
                                     <label className="radio">
-                                    <input type="radio" name="question"/>
-                                    No
+                                    <input type="radio" name="question1"/>
+                                    NÃO
                                     </label>
                                 </div>
                             </div>
@@ -195,12 +195,12 @@ const SignUp = () => {
                                 <label>há acesso à lavanderia?</label>
                                 <div className="control">
                                     <label className="radio">
-                                    <input type="radio" name="question"/>
-                                    Yes
+                                    <input type="radio" name="question2"/>
+                                    SIM
                                     </label>
                                     <label className="radio">
-                                    <input type="radio" name="question"/>
-                                    No
+                                    <input type="radio" name="question2"/>
+                                    NÃO
                                     </label>
                                 </div>
                             </div>
@@ -211,12 +211,12 @@ const SignUp = () => {
                                 <label>tem ou aceita pets?</label>
                                 <div className="control">
                                     <label className="radio">
-                                    <input type="radio" name="question"/>
-                                    Yes
+                                    <input type="radio" name="question3"/>
+                                    SIM
                                     </label>
                                     <label className="radio">
-                                    <input type="radio" name="question"/>
-                                    No
+                                    <input type="radio" name="question3"/>
+                                    NÃO
                                     </label>
                                 </div>
                             </div>
@@ -225,12 +225,12 @@ const SignUp = () => {
                                 <label>possui garagem?</label>
                                 <div className="control">
                                     <label className="radio">
-                                    <input type="radio" name="question"/>
-                                    Yes
+                                    <input type="radio" name="question4"/>
+                                    SIM
                                     </label>
                                     <label className="radio">
-                                    <input type="radio" name="question"/>
-                                    No
+                                    <input type="radio" name="question4"/>
+                                    NÃO
                                     </label>
                                 </div>
                             </div>
