@@ -8,12 +8,14 @@ import SignUp from './views/signUp';
 
 const App = () => {
    return(
-      //  <SignUp/>
-      <BrowserRouter>
+      //  <SignUp/> 
+      <div className="App">
+
          <Routes>
-            <Route component = { Home }  path="/" exact={true}/>
+            <Route path="/" element={<Home/>} />
+            <Route path="/SignUp" element={<SignUp/>} />
          </Routes>
-      </BrowserRouter>
+      </div>
    )
 }
 
