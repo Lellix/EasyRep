@@ -6,7 +6,7 @@ import "bulma/css/bulma.min.css"
 const home = () =>{
     return(
         <>
-           <h1>OLA</h1>
+           {/* <h1>OLA</h1> */}
         </>       
     )
 }
