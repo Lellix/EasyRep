@@ -4,6 +4,9 @@ import "./../components/modal"
 import Login from "./../components/login"
 
 const Header = () => {
+    const closeAndOpenModal =() =>{
+        document.querySelector('.modal').classList.toggle('is-active');
+    }
     return(
 
         <>
@@ -22,7 +25,7 @@ const Header = () => {
                     <div className="linhaVertical mt-2"/>
 
                     <div className="navbar-item">
-                        <button className="button js-modal-trigger is-white baloo2 has-text-weight-bold buttonLogin"  
+                        <button onClick={closeAndOpenModal} className="button js-modal-trigger is-white baloo2 has-text-weight-bold buttonLogin"  
                                 data-bs-target="modal-js-example" 
                                 style={{background: "#fec601", color: "#F6F6F6"}}>
                                     LOGIN </button>
@@ -35,7 +38,7 @@ const Header = () => {
                 <div className="linhaHorizontal mt-2"/>
             </div>
 
-            <Login/>
+            <Login open={closeAndOpenModal}/>
 
         </>
 

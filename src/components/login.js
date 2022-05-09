@@ -5,20 +5,21 @@ import "./login.css"
 
 const Login = (props) => {
 
-
+    
     return(
         <>
-            <div id="modal-js-example" className="modal is-active">
+            <div id="modal-js-example" className="modal">
                 <div className="modal-background"></div>
 
                 <div className="modal-content baloo2">
                     <div className="box">
                         <div className="is-flex is-justify-content-end">
-                            <button className="delete" aria-label="close"></button>
+                            <button className="delete" aria-label="close" onClick={props.open} ></button>
                         </div>
                         <div className="is-flex is-flex-direction-row is-justify-content-center mt-1
                         3mb-5"
                              style={{color: "#6E2594"}}>
+                                 
 
                                 <p className="has-text-weight-bold">LOGIN</p>
                         </div>
