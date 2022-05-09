@@ -10,12 +10,12 @@ const Rep = () =>{
 
                     <div class="field is-grouped">
                         <div class="cidade field">
-                            <div class="control">
+                            <div class="control baloo2">
                                 <input class="input" type="text" placeholder="Digite o nomde da cidade ou da república"/>
                             </div>
                         </div>
 
-                        <div class="field">
+                        <div class="field baloo2">
                             <div class="control">
                                 <div class="select">
                                     <select class="tipo">
@@ -28,8 +28,8 @@ const Rep = () =>{
                             </div>
                         </div>
 
-                        <div class="control">
-                            <button class="buscar button is-link" style={{background: "#6E2594", color: "#F6F6F6"}}>Submit</button>
+                        <div class="control baloo2">
+                            <button class="buscar button is-link" style={{background: "#6E2594", color: "#F6F6F6"}}>BUSCAR</button>
                         </div>
 
                     </div>
