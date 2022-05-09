@@ -19,6 +19,7 @@ const Login = (props) => {
                         <div className="is-flex is-flex-direction-row is-justify-content-center mt-1
                         3mb-5"
                              style={{color: "#6E2594"}}>
+                                 
 
                                 <p className="has-text-weight-bold">LOGIN</p>
                         </div>
