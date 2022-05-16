@@ -13,7 +13,7 @@ const Home = () => {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         <div className="linha"/>
                     </div>
-                    <div className="is-align-items-center is-flex is-flex-direction-column is-flex-grow-1 is-justify-content-end mb-5">
+                    <div className="is-align-items-center is-flex is-flex-direction-column is-flex-grow-1 is-justify-content-center mt-6">
                         <img className="img1" src={require("./../assets/img/EasyRep_PoltronaEstante.png")}></img>
                     </div>
                 </div>

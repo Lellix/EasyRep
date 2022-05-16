@@ -24,18 +24,21 @@ const SignUp = () => {
                             <h1 className="has-text-weight-semibold">INFORMAÇÕES GERAIS</h1>
                         </div>
 
+                        {/* NOME */}
                         <div className="field "> 
                             <div className="control">
                                 <input className="input is-medium" type="text" placeholder="digite o nome da república"/>
                             </div>
                         </div>
 
+                        {/* EMAIL */}
                         <div className="field"> 
                             <div className="control">
                                 <input className="input is-medium" type="email" placeholder="e-mail"/>
                             </div>
                         </div>
 
+                        {/* SENHA */}
                         <div className="is-flex is-flex-direction-row is-justify-content-center">
                             <div className="field is-flex-grow-1 mr-1"> 
                                 <div className="control">
@@ -49,7 +52,8 @@ const SignUp = () => {
                                 </div>
                             </div>
                         </div>
-
+                        
+                        {/* TIPO E PENSÃO */}
                         <div className="is-flex is-flex-direction-row is-justify-content-center">
                             <div className="field">
                                 <div className="control">
@@ -80,6 +84,7 @@ const SignUp = () => {
 
                         </div>
 
+                        {/* INPUT FOTO */}
                         <div className="file is-light is-medium mt-2">
                             <label className="file-label">
                                 <input className="file-input" type="file" name="resume"/>
@@ -103,6 +108,7 @@ const SignUp = () => {
                         </div>
                     </div>
 
+                    {/* ENDEREÇO E NÚMERO */}
                     <div className="is-flex is-flex-direction-row is-justify-content-center">
                         <div className="field is-flex-grow-5"> 
                             <div className="control">
@@ -117,6 +123,7 @@ const SignUp = () => {
                         </div>
                     </div>
 
+                    {/* BAIRRO E COMPLEMENTO */}
                     <div className="is-flex is-flex-direction-row is-justify-content-center">
                         <div className="field is-flex-grow-1"> 
                             <div className="control">
@@ -131,6 +138,7 @@ const SignUp = () => {
                         </div>
                     </div>
 
+                    {/* CIDADE E CEP */}
                     <div className="is-flex is-flex-direction-row is-justify-content-center">
                         <div className="field is-flex-grow-1"> 
                             <div className="control">
@@ -154,6 +162,7 @@ const SignUp = () => {
                         </div>
                     </div>
 
+                    {/* VALOR E LIMPEZA */}
                     <div className="is-flex is-flex-direction-row is-justify-content-center">
                         <div className="field is-flex-grow-1"> 
                             <div className="control">
@@ -175,7 +184,8 @@ const SignUp = () => {
                         </div>
                     </div>
 
-                    <div className="is-flex is-flex-direction-row">  
+                    {/* RADIO BUTTONS */}
+                    <div className="is-flex is-flex-direction-row is-size-5 mt-3">  
                         <div className="is-flex is-flex-direction-column is-flex-grow-1">  
                             <div className="field is-flex-grow-1">
                                 <label>há acesso à cozinha?</label>
@@ -237,7 +247,7 @@ const SignUp = () => {
                         </div>
                     </div>
 
-                
+                    {/* BOTÃO CADASTRAR */}
                     <div className="control is-flex is-justify-content-center is-flex-direction-column">
                         <button className="button is-white baloo2 has-text-weight-bold buttonEntrar mt-3"  
                                 style={{background: "#fec601", color: "#4e4e4e"}}>
