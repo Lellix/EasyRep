@@ -3,6 +3,7 @@ import {Route, Routes} from "react-router-dom";
 
 import Home from "./screen/Home";
 import SignUp from './views/signUp';
+import RepProfile from './views/repProfile';
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
          <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/SignUp" element={<SignUp/>} />
+            <Route path="/RepProfile" element={<RepProfile/>} />
          </Routes>
       </div>
    )
