@@ -3,6 +3,7 @@ import "./home.css"
 
 import Header from './header'
 import Footer from './footer'
+import RepMenu from "../components/menuRep"
 import './repProfile.css'
 import { Link } from 'react-router-dom';
 
@@ -15,35 +16,10 @@ const RepProfile = () => {
             
             <nav className="navbar baloo2">
 
-                {/* <RepMenu/> */}
-                <aside className="menu">
-                    <p className="menu-label">
-                        Geral
-                    </p>
-                    <ul className="menu-list">
-                        <li><a>Perfil</a></li>
-                    </ul>
-                    <p className="menu-label">
-                        Administração
-                    </p>
-                    <ul className="menu-list">
-                        <li><a>Moradores</a></li>
-                        <li><a>Modificar Vagas</a></li>
-                        <li>
-                            <a className="menu-list">Visitas</a>
-                            <ul>
-                                <li><a>Calendário</a></li>
-                                <li><a>Mensagens</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Financeiro</a></li>
-                        <li><a>Tarefas</a></li>
-                    </ul>
-                </aside>
-                {/* ------------------------------------- */}
+                <RepMenu/>
 
-                <div className="baloo2 conteudo">
-                    <div className="card">
+                <div className="baloo2 conteudoo">
+                    <div className="card profile">
                         <div className="card-content is-flex-direction-column is-align-content-center">
                             <div className="media is-flex is-justify-content-center">
                                 <figure className="image is-128x128">
@@ -52,12 +28,12 @@ const RepProfile = () => {
                             </div>
 
                             <div className="content is-flex-direction-column is-justify-content-center">
-                                <p className="title is-4">República Xeruléu</p>
+                                <p className="title is-4">República Um Nome Muito Grande</p>
                                 <div className=" is-flex-direction-row is-justify-content-center">
                                     <Link to="/RepChangeProfile">
-                                        <button className="button"> Editar Perfil </button>
+                                        <button className="button buttonn"> Editar Perfil </button>
                                     </Link>
-                                    <button className="button"> Notificações </button>
+                                    <button className="button buttonn"> Notificações </button>
                                 </div>
                             </div>
                         </div>

@@ -2,6 +2,9 @@ import React from "react"
 import "./../views/home.css"
 import './../views/repProfile.css'
 
+import { Link } from 'react-router-dom';
+
+
 const RepMenu = () => {
     return(
         <>
@@ -10,14 +13,18 @@ const RepMenu = () => {
                     Geral
                 </p>
                 <ul className="menu-list">
-                    <li><a>Perfil</a></li>
+                    <Link to="/RepProfile">
+                        <li><a>Perfil</a></li>
+                    </Link>
                 </ul>
                 <p className="menu-label">
                     Administração
                 </p>
                 <ul className="menu-list">
                     <li><a>Moradores</a></li>
-                    <li><a>Modificar Vagas</a></li>
+                    <Link to="/Rooms">
+                        <li><a>Gerenciar Vagas</a></li>
+                    </Link>
                     <li>
                         <a className="menu-list">Visitas</a>
                         <ul>
