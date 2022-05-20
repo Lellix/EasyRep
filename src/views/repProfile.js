@@ -43,7 +43,7 @@ const RepProfile = () => {
                 {/* ------------------------------------- */}
 
                 <div className="baloo2 conteudo">
-                    <div className="card debug">
+                    <div className="card">
                         <div className="card-content is-flex-direction-column is-align-content-center">
                             <div className="media is-flex is-justify-content-center">
                                 <figure className="image is-128x128">
@@ -61,6 +61,10 @@ const RepProfile = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div className="agenda">
+                        
                     </div>
 
                 </div>

@@ -3,12 +3,11 @@ import "./home.css"
 
 import Header from './header'
 import Footer from './footer'
+import HorizontalLinearStepper from '../components/stepper'
+
 import './repProfile.css'
-import { Link } from 'react-router-dom';
 
-
-
-const RepProfile = () => {
+const RepChangeProfile = () => {
     return(
         <>
             <Header/>
@@ -42,7 +41,9 @@ const RepProfile = () => {
                 </aside>
                 {/* ------------------------------------- */}
 
-               
+                <div className='conteudo'>
+                    <HorizontalLinearStepper/>
+                </div>
             </nav>
 
             <Footer/>
@@ -50,4 +51,4 @@ const RepProfile = () => {
     )
 }
 
-export default RepProfile;
+export default RepChangeProfile;
