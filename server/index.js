@@ -86,6 +86,12 @@ app.post("/login", (req, res) =>  {
   });
 });
 
+app.get('/republicas', async (req, res) => {
+  const lista = await db.selectUserByType(2);
+  res.json(lista);
+});
+
+
 app.listen(3001, () => {
   console.log("rodando na porta 3001");
 });
