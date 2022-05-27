@@ -12,7 +12,7 @@ const About = () =>{
                 <div className="about px-6 is-flex is-flex-direction-row">
                     <div className="info is-align-items-center is-flex is-flex-direction-column is-flex-grow-1 ">                       
                         <div className="imagem is-flex is-align-content-end">
-                            <img className="imgs" src={require("./../assets/img/EasyRep_MoçaSentadaComPCnochao.png")}></img>
+                            <img className="imgs" src={require("./../assets/img/EasyRep_MoçaSentadaComPCnoChao.png")}></img>
                         </div>
                         <h1 className="titulos is-size-4 has-text-weight-semibold py-3">Anuncie</h1>
                         <p className="texto has-text-centered is-size-5">Tá sobrando uma vaga
