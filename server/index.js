@@ -10,6 +10,7 @@ const db = mysql.createConnection({
   user: "root",
   password: "matheus",
   database: "easyrep",
+  port: 3306
 });
 
 app.use(express.json());
@@ -37,7 +38,8 @@ app.post("/register", (req, res) => {
     if (err) {
       //res.send(err);
     }
-    if (result.length == 0) {
+    console.log(result);
+    if (result.length === 0) {
       bcrypt.hash(senha, saltRounds, (err, hash) => {
         console.log(result.length);
         db.query(
@@ -85,6 +87,34 @@ app.post("/login", (req, res) =>  {
     }
   });
 });
+
+app.get("/RepProfile", (req, res) =>  {
+  const nome = '';
+
+  db.query("SELECT nome FROM republicas WHERE email = ?", [nome], (err, result) => {
+    //console.log(result);
+    
+    if (err) {
+      res.send(err);
+    }
+    if (result.length > 0) {
+        if (response) {
+          nome = result[0].nome
+          //res.send({ msg: "Usuário logado :" + result[0].nome });
+          res.send({ nome: result[0].nome });
+        } else {
+          res.send({ msg: "#!#!#" });
+        }
+    }
+  });
+});
+
+
+
+
+
+
+
 
 app.get('/republicas', async (req, res) => {
   const lista = await db.selectUserByType(2);

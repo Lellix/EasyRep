@@ -6,10 +6,21 @@ import Footer from './footer'
 import RepMenu from "../components/menuRep"
 import './repProfile.css'
 import { Link } from 'react-router-dom';
-
+import Axios from "axios";
 
 
 const RepProfile = () => {
+    const handleRep = (values) =>{
+        Axios.get("http://localhost:3001/RepProfile",{
+        }, this.state).then((response) => {
+            this.setState({ nome: response.data.nome})
+            console.alert(response.data.msg);
+            const nome = response.data.nome;
+          });
+    };
+
+    /*const { nome } = this.state;*/
+    
     return(
         <>
             <Header/>

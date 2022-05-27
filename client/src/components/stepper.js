@@ -27,10 +27,10 @@ export default function HorizontalLinearStepper() {
 
     const handleRegister = (values) => {
         
-        console.log(values.acessoGaragem);
+       // console.log(values);
        // if(values.acessoGaragem !== 'undefined'){
           //  console.log(values);
-            Axios.post("http://localhost:3001/register/", {
+            Axios.post("http://localhost:3001/register", {
                 email: values.email,
                 senha: values.senha,
                 nome: values.nome,
@@ -49,6 +49,7 @@ export default function HorizontalLinearStepper() {
                 tipoInquilino: values.tipoInquilino,
                 politicaLimpeza: values.politicaLimpeza,
             }).then((response) => {
+            //<Link to="/RepProfile"/>
             alert(response.data.msg);
             //console.log(response);
             });
@@ -351,8 +352,8 @@ export default function HorizontalLinearStepper() {
                     </Typography>
                     <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                         <Box sx={{ flex: '1 1 auto' }} />
-                            <Button type="submit">Confirmar Cadastro</Button>
-                        
+                            
+                           <Button type="submit">Confirmar Cadastro</Button>
                     </Box>
                     </React.Fragment>
                 ) : (
