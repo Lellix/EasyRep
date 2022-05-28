@@ -6,10 +6,9 @@ import { Link } from 'react-router-dom';
 
 const Login = (props) => {
 
-    // HOTFIX
     return(
         <>
-            <div id="modal-js-example" className="modal">
+            <div id="login" className="modal">
                 <div className="modal-background"></div>
 
                 <div className="modal-content baloo2">

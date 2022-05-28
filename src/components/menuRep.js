@@ -1,6 +1,6 @@
 import React from "react"
-import "./../views/home.css"
-import './../views/repProfile.css'
+import "./../views/css/home.css"
+import './../views/css/repProfile.css'
 
 import { Link } from 'react-router-dom';
 
@@ -14,7 +14,7 @@ const RepMenu = () => {
                 </p>
                 <ul className="menu-list">
                     <Link to="/RepProfile">
-                        <li><a>Perfil</a></li>
+                        <a>Perfil</a>
                     </Link>
                 </ul>
                 <p className="menu-label">
@@ -23,7 +23,7 @@ const RepMenu = () => {
                 <ul className="menu-list">
                     <li><a>Moradores</a></li>
                     <Link to="/Rooms">
-                        <li><a>Gerenciar Vagas</a></li>
+                        <a>Gerenciar Vagas</a>
                     </Link>
                     <li>
                         <a className="menu-list">Visitas</a>
@@ -34,6 +34,7 @@ const RepMenu = () => {
                     </li>
                     <li><a>Financeiro</a></li>
                     <li><a>Tarefas</a></li>
+                    <li><a>Excluir República</a></li>
                 </ul>
             </aside>
         </>

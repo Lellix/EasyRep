@@ -1,11 +1,10 @@
 import React from "react"
-import "./home.css"
+import "./css/home.css"
+import './css/signUp.css'
 
 import Header from './header'
 import Footer from './footer'
 import HorizontalLinearStepper from '../components/stepper'
-
-import './signUp.css'
 
 const SignUp = () => {
     return(

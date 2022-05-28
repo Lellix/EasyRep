@@ -1,10 +1,11 @@
 import React from "react"
-import "./home.css"
+import "./css/home.css"
 
 import Header from './header'
 import Footer from './footer'
 import RepMenu from "../components/menuRep"
-import './repProfile.css'
+import './css/repProfile.css'
+
 import { Link } from 'react-router-dom';
 
 

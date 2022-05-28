@@ -1,5 +1,6 @@
 import React from "react"
-import "./header.css"
+import "./css/header.css"
+
 import "./../components/modal"
 import Login from "./../components/login"
 import { Link } from 'react-router-dom';
@@ -33,7 +34,7 @@ const Header = () => {
 
                     <div className="navbar-item">
                         <button onClick={closeAndOpenModal} className="button js-modal-trigger is-white baloo2 has-text-weight-bold buttonLogin"  
-                                data-bs-target="modal-js-example" 
+                                data-bs-target="login" 
                                 style={{background: "#fec601", color: "#F6F6F6"}}>
                                     LOGIN </button>
                     </div> 

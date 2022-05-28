@@ -19,3 +19,8 @@
 .cardInfo{
     width: 30%;
 }
+
+.card{ 
+    width: 20vw;
+    height: fit-content;
+}

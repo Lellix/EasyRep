@@ -1,6 +1,9 @@
 import React from "react";
-import "./home.css"
+import "./css/home.css"
+
 import Cards from './../components/cards'
+
+import { Link } from 'react-router-dom';
 
 const Rep = () =>{
     return(
@@ -29,14 +32,14 @@ const Rep = () =>{
                         </div>
 
                         <div className="control baloo2">
-                            <button className="buscar button is-link" style={{background: "#6E2594", color: "#F6F6F6"}}>BUSCAR</button>
+                            <Link to="Search" className="buscar button is-link" style={{background: "#6E2594", color: "#F6F6F6"}}>BUSCAR</Link>
                         </div>
 
                     </div>
                 </div>
             </nav>
 
-            <nav className="is-flex is-justify-content-center baloo2">
+            <nav className="is-flex is-justify-content-center baloo2"> {/* MUDAR PRA PEGAR DO BD */}
                 <div className="repCards px-6 is-flex is-flex-direction-row is-justify-content-center is-align-content-center">
                     <Cards nome={'República Xeruléu'}
                             rua={'Pererê Paraná'} 

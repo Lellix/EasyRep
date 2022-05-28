@@ -106,3 +106,17 @@
     box-shadow: 7px 7px 1px #fec601;
     border-radius: 7px;
 }
+
+.searchBar{
+    width: 70vw;
+    margin: 2px;
+}
+
+.searchButton{
+    width: 10vw;
+    margin: 2px;
+}
+
+.full{
+    width: 100%;
+}

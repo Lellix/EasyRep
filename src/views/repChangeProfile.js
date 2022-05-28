@@ -1,5 +1,5 @@
 import React from "react"
-import "./home.css"
+import "./css/home.css"
 
 import Header from './header'
 import Footer from './footer'
@@ -7,7 +7,7 @@ import RepMenu from "../components/menuRep"
 
 import HorizontalLinearStepper from '../components/stepper'
 
-import './repProfile.css'
+import './css/repProfile.css'
 
 const RepChangeProfile = () => {
     return(
