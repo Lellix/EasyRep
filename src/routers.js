@@ -12,6 +12,7 @@ import Search from "./views/search"
 import RepData from "./views/repData";
 import SpareRooms from "./views/spareRooms"
 import Room from "./views/room";
+import RepBusca from "./views/repBusca";
 
 
 
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/RepProfile" element={<RepProfile/>} />
             <Route path="/RepChangeProfile" element={<RepChangeProfile/>} />
             <Route path="/Rooms" element={<Rooms/>} />
+            <Route path="/RepBusca" element={<RepBusca/>} />
             <Route path="/EditRoom" element={<EditRoom/>} />
             <Route path="/AddRoom" element={<AddRoom/>} />
             <Route path="/Search" element={<Search/>} />

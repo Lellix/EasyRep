@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react";
 
 import "./../views/css/home.css"
 import "./modal"
@@ -10,6 +10,13 @@ import { Link } from 'react-router-dom';
 
 const Filters = (props) => {
 
+    //const [republicas, setRepublicas] = useState([]);
+    //const [q, setQ] = useState("");
+
+    //const [searchParam] = useState(["nome", "cidade"]);
+    const [filterParam, setFilterParam] = useState(["All"]);
+
+
     return(
         <>
             <nav className="filtros">
@@ -18,7 +25,7 @@ const Filters = (props) => {
                 <div className="field is-flex-grow-1">
                     <label>Tipo</label>
                     <div className="control is-flex is-flex-direction-column">
-                        <label className="checkbox">
+                       {/* <label className="checkbox">
                             <input type="checkbox" name="question1"/>
                                 Feminina
                         </label>
@@ -29,7 +36,19 @@ const Filters = (props) => {
                         <label className="checkbox">
                             <input type="checkbox" name="question1"/>
                                 Mista
-                        </label>
+                        </label> */}
+
+                        <select
+                            onChange={(e) => {
+                                setFilterParam(e.target.value);
+                            }}
+                            className="checkbox"
+                        >
+                            <option value="M">Masculina</option>
+                            <option value="F">Feminina</option>
+                            <option value="P">Pensão</option>
+                        </select>
+                    
                     </div>
                 </div>
 
