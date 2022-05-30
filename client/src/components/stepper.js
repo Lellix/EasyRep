@@ -27,7 +27,7 @@ export default function HorizontalLinearStepper() {
 
     const handleRegister = (values) => {
         
-       // console.log(values);
+        console.log(values);
        // if(values.acessoGaragem !== 'undefined'){
           //  console.log(values);
             Axios.post("http://localhost:3001/register", {
@@ -45,13 +45,14 @@ export default function HorizontalLinearStepper() {
                 acessoCozinha: values.acessoCozinha,
                 acessoGaragem: values.acessoGaragem,
                 acessoLavanderia: values.acessoLavanderia,
-                aceitaPet: values.aceitaPet,
+                regime: values.regime,
+                //aceitaPet: values.aceitaPet,
                 tipoInquilino: values.tipoInquilino,
                 politicaLimpeza: values.politicaLimpeza,
             }).then((response) => {
             //<Link to="/RepProfile"/>
             alert(response.data.msg);
-            //console.log(response);
+            //console.log(response.data.msg);
             });
         //}
       };
@@ -60,7 +61,7 @@ export default function HorizontalLinearStepper() {
   const [skipped, setSkipped] = React.useState(new Set());
    
  const content = (activeStep) => {
-        if (activeStep == 0){
+        if (activeStep === 0){
             return (
                 <div className="mt-5">
                     <div className="my-3">
@@ -113,12 +114,12 @@ export default function HorizontalLinearStepper() {
                             <div className="field">
                                         <div className="control">
                                             <div className="select is-medium">
-                                                <select className="regime">
+                                            <Field as="select" name="regime" className="tipo">
                                                     <option>Regime</option>
-                                                    <option>Tradicional</option>
-                                                    <option>Não Tradicional</option>
-                                                    <option>Pensão</option>
-                                                </select>
+                                                    <option value="T">Tradicional</option>
+                                                    <option value="N">Não Tradicional</option>
+                                                    <option value="P">Pensão</option>
+                                                </Field>
                                             </div>
                                         </div>
                             </div>
@@ -142,7 +143,7 @@ export default function HorizontalLinearStepper() {
                         </div>
                     </div>
                 );
-            } else if (activeStep == 1){
+            } else if (activeStep === 1){
                 return (
                     <>
                         <div className="mt-5">
@@ -352,7 +353,6 @@ export default function HorizontalLinearStepper() {
                     </Typography>
                     <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                         <Box sx={{ flex: '1 1 auto' }} />
-                            
                            <Button type="submit">Confirmar Cadastro</Button>
                     </Box>
                     </React.Fragment>

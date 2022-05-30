@@ -7,6 +7,7 @@ import RepProfile from './views/repProfile';
 import RepChangeProfile from './views/repChangeProfile';
 import Rooms from "./views/rooms";
 import RepBusca from "./views/repBusca";
+import Search from "./views/search";
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="/" element={<Home/>} />
             <Route path="/RepBusca" element={<RepBusca/>} />
             <Route path="/SignUp" element={<SignUp/>} />
+            <Route path="/Search" element={<Search/>} />
             <Route path="/RepProfile" element={<RepProfile/>} />
             <Route path="/RepChangeProfile" element={<RepChangeProfile/>} />
             <Route path="/Rooms" element={<Rooms/>} />
