@@ -25,7 +25,7 @@ const Search = () =>{
 
                         <Filters/>
 
-                        <div className="wrapper mr-6">
+                        <div className="wrapper ml-2">
                         {/* fazer um for de acordo com os filtros */}
                             <Link to="/RepData"><Cards className="cardSize"
                                 nome={'República Xeruléu'}
@@ -38,7 +38,7 @@ const Search = () =>{
                                 tipo={'fem'}
                                 imagem={'https://bulma.io/images/placeholders/1280x960.png'}/> </Link>
 
-                            <Link to="/RepData"><Cards
+                            <Link to="/RepData"><Cards className="cardSize"
                                 nome={'República Xeruléu'}
                                 rua={'Pererê Paraná'} 
                                 numero={666} 
@@ -49,7 +49,7 @@ const Search = () =>{
                                 tipo={'fem'}
                                 imagem={'https://bulma.io/images/placeholders/1280x960.png'}/> </Link>
 
-                            <Link to="/RepData"><Cards
+                            <Link to="/RepData"><Cards className="cardSize"
                                 nome={'República Xeruléu'}
                                 rua={'Pererê Paraná'} 
                                 numero={666} 
@@ -60,7 +60,7 @@ const Search = () =>{
                                 tipo={'fem'}
                                 imagem={'https://bulma.io/images/placeholders/1280x960.png'}/> </Link>
 
-                            <Link to="/RepData"><Cards
+                            <Link to="/RepData"><Cards className="cardSize"
                                 nome={'República Xeruléu'}
                                 rua={'Pererê Paraná'} 
                                 numero={666} 
@@ -71,7 +71,7 @@ const Search = () =>{
                                 tipo={'fem'}
                                 imagem={'https://bulma.io/images/placeholders/1280x960.png'}/> </Link>
 
-                            <Link to="/RepData"><Cards
+                            <Link to="/RepData"><Cards className="cardSize"
                                 nome={'República Xeruléu'}
                                 rua={'Pererê Paraná'} 
                                 numero={666} 
