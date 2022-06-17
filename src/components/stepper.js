@@ -70,6 +70,7 @@ export default function HorizontalLinearStepper() {
                     {/* NOME */}
                         <div className="field "> 
                             <div className="control">
+                                <label>Nome</label>
                                 <Field name="nome" className="input is-medium" type="text" placeholder="digite o nome da república"/>
                             </div>
                         </div>
@@ -77,6 +78,7 @@ export default function HorizontalLinearStepper() {
                         {/* EMAIL */}
                         <div className="field"> 
                             <div className="control">
+                                <label>Email</label>
                                 <Field name="email" className="input is-medium" type="email" placeholder="e-mail"/>
                             </div>
                         </div>
@@ -85,24 +87,26 @@ export default function HorizontalLinearStepper() {
                         <div className="is-flex is-flex-direction-row is-justify-content-center">
                             <div className="field is-flex-grow-1 mr-1"> 
                                 <div className="control">
+                                    <label>Senha</label>
                                     <Field name="senha" className="input is-medium" type="password" placeholder="senha"/>
                                 </div>
                             </div>
 
                             <div className="field is-flex-grow-1 ml-1"> 
                                 <div className="control ">
+                                    <label>Confirme a senha</label>
                                     <Field name="senha2" className="input is-medium" type="password" placeholder="confirme a senha"/>
                                 </div>
                             </div>
                         </div>
                         
                         {/* TIPO E PENSÃO */}
-                        <div className="is-flex is-flex-direction-row is-justify-content-center">
-                            <div className="field">
-                                <div className="control">
-                                    <div className="select is-medium">
-                                        <Field as="select" name="tipoInquilino" className="tipo">
-                                            <option>Tipo</option>
+                        <div className="is-flex is-flex-direction-row">
+                            <div className="field is-flex is-flex-grow-1">
+                                <div className="control is-flex is-flex-direction-column">
+                                    <label>Tipo</label>
+                                    <div className="select is-medium">                                        
+                                        <Field as="select" name="tipoInquilino" className="tipo">                                            
                                             <option value = "F">Feminina</option>
                                             <option value = "M">Masculina</option>
                                             <option value = "MT">Mista</option>
@@ -111,17 +115,17 @@ export default function HorizontalLinearStepper() {
                                 </div>
                             </div>
                                 
-                            <div className="field">
-                                        <div className="control">
-                                            <div className="select is-medium">
-                                            <Field as="select" name="regime" className="tipo">
-                                                    <option>Regime</option>
-                                                    <option value="T">Tradicional</option>
-                                                    <option value="N">Não Tradicional</option>
-                                                    <option value="P">Pensão</option>
-                                                </Field>
-                                            </div>
-                                        </div>
+                            <div className="field is-flex is-flex-grow-1">
+                                <div className="control is-flex is-flex-direction-column">
+                                    <label>Regime</label>
+                                    <div className="select is-medium">
+                                        <Field as="select" name="regime" className="tipo">
+                                            <option value="T">Tradicional</option>
+                                            <option value="N">Não Tradicional</option>
+                                            <option value="P">Pensão</option>
+                                        </Field>
+                                    </div>
+                                </div>
                             </div>
 
 
@@ -129,7 +133,7 @@ export default function HorizontalLinearStepper() {
 
                         {/* INPUT FOTO */}
                         <div className="file is-light is-medium mt-2">
-                            <label className="file-label">
+                            <label className="file-label">  
                                 <input className="file-input" type="file" name="resume"/>
                                 <span className="file-cta">
                                 <span className="file-icon">
@@ -151,16 +155,18 @@ export default function HorizontalLinearStepper() {
                                 <h1 className="has-text-weight-semibold">ENDEREÇO</h1>
                             </div>
                         </div>
-                        // {/* ENDEREÇO E NÚMERO */}
+                        {/* ENDEREÇO E NÚMERO */}
                         <div className="is-flex is-flex-direction-row is-justify-content-center">
                             <div className="field is-flex-grow-5"> 
                                 <div className="control">
+                                    <label>Rua</label>
                                     <Field name="rua" className="input is-medium mr-1" type="text" placeholder="endereço"/>
                                 </div>
                             </div>
 
                             <div className="field is-flex-grow-1"> 
                                 <div className="control">
+                                    <label>Número</label>
                                     <Field name="numero" className="input is-medium ml-1" type="text" placeholder="número"/>
                                 </div>
                             </div>
@@ -170,12 +176,14 @@ export default function HorizontalLinearStepper() {
                         <div className="is-flex is-flex-direction-row is-justify-content-center">
                             <div className="field is-flex-grow-1"> 
                                 <div className="control">
+                                    <label>Bairro</label>
                                     <Field name="bairro" className="input is-medium mr-1" type="text" placeholder="bairro"/>
                                 </div>
                             </div>
 
                             <div className="field is-flex-grow-1"> 
                                 <div className="control">
+                                    <label>Complemento</label>
                                     <Field name="complemento" className="input is-medium ml-1" type="text" placeholder="complemento"/>
                                 </div>
                             </div>
@@ -185,12 +193,14 @@ export default function HorizontalLinearStepper() {
                         <div className="is-flex is-flex-direction-row is-justify-content-center">
                             <div className="field is-flex-grow-1"> 
                                 <div className="control">
+                                    <label>Cidade</label>
                                     <Field name="cidade" className="input is-medium mr-1" type="text" placeholder="cidade"/>
                                 </div>
                             </div>
 
                             <div className="field is-flex-grow-1"> 
                                 <div className="control">
+                                    <label>CEP</label>
                                     <Field name="cep" className="input is-medium ml-1" type="text" placeholder="cep"/>
                                 </div>
                             </div>
@@ -212,15 +222,16 @@ export default function HorizontalLinearStepper() {
                         <div className="is-flex is-flex-direction-row is-justify-content-center">
                             <div className="field is-flex-grow-1"> 
                                 <div className="control">
+                                    <label>Valor Médio</label>
                                     <Field name="valorContas" className="input is-medium mr-1" type="text" placeholder="Valor Médio (contas/pessoa)"/>
                                 </div>
                             </div>
 
                             <div className="field is-flex-grow-1">
-                                <div className="control">
+                                <div className="control is-flex is-flex-direction-column">
+                                    <label>Política de Limpeza</label>
                                     <div className="select is-medium ml-1">
                                         <Field as='select' name="politicaLimpeza" className="tipo">
-                                            <option>Política de Limpeza</option>
                                             <option value="D">Diarista</option>
                                             <option value ="E">Empregada</option>
                                             <option value="X">Moradores</option>

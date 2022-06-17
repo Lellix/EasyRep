@@ -11,7 +11,7 @@ const SignUp = () => {
         <>
             <Header/>
 
-            <div className='conteudo is-flex is-justify-itens-center'>
+            <div className='mt-5 is-flex is-justify-content-center'>
                 <HorizontalLinearStepper/>
             </div>
 
