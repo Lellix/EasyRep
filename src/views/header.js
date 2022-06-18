@@ -3,12 +3,18 @@ import "./css/header.css"
 
 import "./../components/modal"
 import Login from "./../components/login"
+import SingUpModal from "../components/signUpModal"
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     const closeAndOpenModal =() =>{
         document.querySelector('.modal').classList.toggle('is-active');
     }
+
+    const closeAndOpenModal2 =() =>{
+        document.querySelector('.modal').classList.toggle('is-active');
+    }
+
     return(
 
         <>
@@ -24,16 +30,19 @@ const Header = () => {
 
                 <div className="navbar-end pr-5">
                     <div className="navbar-item baloo2">
-                        <Link to="/SignUp">
-                            <h2 className="has-text-weight-medium" style={{color: "#4E4E4E"}}>CADASTRE-SE</h2>
-                        </Link>
+                        <button onClick={closeAndOpenModal}
+                                className="button js-modal-trigger is-white baloo2 has-text-weight-bold"  
+                                data-bs-target="signup" style={{color: "#4E4E4E"}}>
+                                    CADASTRE-SE
+                        </button>
 
                     </div>
 
                     <div className="linhaVertical mt-2"/>
 
                     <div className="navbar-item">
-                        <button onClick={closeAndOpenModal} className="button js-modal-trigger is-white baloo2 has-text-weight-bold buttonLogin"  
+                        <button onClick={closeAndOpenModal2}
+                                className="button js-modal-trigger is-white baloo2 has-text-weight-bold buttonLogin"  
                                 data-bs-target="login" 
                                 style={{background: "#fec601", color: "#F6F6F6"}}>
                                     LOGIN </button>
@@ -46,7 +55,8 @@ const Header = () => {
                 <div className="linhaHorizontal mt-2"/>
             </div>
 
-            <Login open={closeAndOpenModal}/>
+            <SingUpModal open={closeAndOpenModal}/>
+            <Login open={closeAndOpenModal2}/>
 
         </>
 

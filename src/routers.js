@@ -13,6 +13,7 @@ import RepData from "./views/repData";
 import SpareRooms from "./views/spareRooms"
 import Room from "./views/room";
 import RepBusca from "./views/repBusca";
+import SingUpModal from "./components/signUpModal";
 
 
 
@@ -33,6 +34,7 @@ const App = () => {
             <Route path="/RepData" element={<RepData/>} />
             <Route path="/SpareRooms" element={<SpareRooms/>} />
             <Route path="/Room" element={<Room/>} />
+            <Route path="/SignUpModal" element={<SingUpModal/>} />
 
          </Routes>
       </div>
