@@ -13,7 +13,10 @@ import RepData from "./views/repData";
 import SpareRooms from "./views/spareRooms"
 import Room from "./views/room";
 import RepBusca from "./views/repBusca";
-import SingUpModal from "./components/signUpModal";
+import SignUpResident from "./views/signUpResident";
+import Finances from "./views/finances";
+import Residents from "./views/residents";
+import Chores from "./views/chores";
 
 
 
@@ -34,7 +37,10 @@ const App = () => {
             <Route path="/RepData" element={<RepData/>} />
             <Route path="/SpareRooms" element={<SpareRooms/>} />
             <Route path="/Room" element={<Room/>} />
-            <Route path="/SignUpModal" element={<SingUpModal/>} />
+            <Route path="/SignUpResident" element={<SignUpResident/>} />
+            <Route path="/Finances" element={<Finances/>} />
+            <Route path="/Residents" element={<Residents/>} />
+            <Route path="/Chores" element={<Chores/>} />
 
          </Routes>
       </div>

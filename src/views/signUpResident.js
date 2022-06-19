@@ -5,21 +5,23 @@ import './css/signUp.css'
 import Header from './header'
 import Footer from './footer'
 
+
 const SignUpResident = () => {
+
     return(
         <>
             <Header/>
 
-            <div className='mt-5 is-flex is-justify-content-center'>
-                <div className="my-3">
-                        <h1 className="has-text-weight-semibold">CADASTRO</h1>
+            <div className='mt-5 is-flex is-flex-direction-column mt-3 ml-6 mr-6 is-justify-content-center'>
+                <div className="my-3 mb-5">
+                        <h1 className="has-text-weight-semibold">CADASTRAR</h1>
                 </div>
 
                 {/* NOME */}
                 <div className="field "> 
                     <div className="control">
                         <label>Nome</label>
-                        <Field name="nome" className="input is-medium" type="text" placeholder="digite o nome da república"/>
+                        <input name="nome" className="input is-medium" type="text" placeholder="digite o nome da república"/>
                     </div>
                 </div>
 
@@ -27,7 +29,7 @@ const SignUpResident = () => {
                 <div className="field"> 
                     <div className="control">
                         <label>Email</label>
-                        <Field name="email" className="input is-medium" type="email" placeholder="e-mail"/>
+                        <input name="email" className="input is-medium" type="email" placeholder="e-mail"/>
                     </div>
                 </div>
 
@@ -36,14 +38,14 @@ const SignUpResident = () => {
                     <div className="field is-flex-grow-1 mr-1"> 
                         <div className="control">
                             <label>Senha</label>
-                            <Field name="senha" className="input is-medium" type="password" placeholder="senha"/>
+                            <input name="senha" className="input is-medium" type="password" placeholder="senha"/>
                         </div>
                     </div>
 
                     <div className="field is-flex-grow-1 ml-1"> 
                         <div className="control ">
                             <label>Confirme a senha</label>
-                            <Field name="senha2" className="input is-medium" type="password" placeholder="confirme a senha"/>
+                            <input name="senha2" className="input is-medium" type="password" placeholder="confirme a senha"/>
                         </div>
                     </div>
                 </div>
@@ -61,6 +63,13 @@ const SignUpResident = () => {
                             </span>
                         </span>
                     </label>
+                </div>
+
+                <div>
+                    <button className="button"
+                            onClick="window.history.back();"
+                            style={{background: "#fec601", color: "#F6F6F6"}}>
+                                CADASTRAR</button>
                 </div>
             </div>
 

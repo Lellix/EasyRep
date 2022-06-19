@@ -49,9 +49,9 @@ const RepData = () =>{
                 </div>
 
                 <div className="repAbout is-flex is-flex-direction-column">
-                        <p>Sobre</p>
-                        <table className="ml-4 mt-3">
-                            <tbody>
+                    <p>Sobre</p>
+                    <table className="ml-4 mt-3">
+                        <tbody>
                             <tr>
                                 <td>Tipo (Sexo)</td>
                                 <td>Feminina</td>
@@ -76,9 +76,9 @@ const RepData = () =>{
                                 <td>Número de Moradores</td>
                                 <td>5</td>
                             </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                        </tbody>
+                    </table>
+                </div>
 
                 <div className="slideshow">
                     <Slideshow/>

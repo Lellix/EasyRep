@@ -3,15 +3,11 @@ import "./css/header.css"
 
 import "./../components/modal"
 import Login from "./../components/login"
-import SingUpModal from "../components/signUpModal"
+import SingUpModal from "./../components/signUpModal"
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     const closeAndOpenModal =() =>{
-        document.querySelector('.modal').classList.toggle('is-active');
-    }
-
-    const closeAndOpenModal2 =() =>{
         document.querySelector('.modal').classList.toggle('is-active');
     }
 
@@ -35,17 +31,17 @@ const Header = () => {
                                 data-bs-target="signup" style={{color: "#4E4E4E"}}>
                                     CADASTRE-SE
                         </button>
-
                     </div>
 
                     <div className="linhaVertical mt-2"/>
 
                     <div className="navbar-item">
-                        <button onClick={closeAndOpenModal2}
+                        <button onClick={closeAndOpenModal}
                                 className="button js-modal-trigger is-white baloo2 has-text-weight-bold buttonLogin"  
                                 data-bs-target="login" 
                                 style={{background: "#fec601", color: "#F6F6F6"}}>
-                                    LOGIN </button>
+                                    LOGIN 
+                        </button>
                     </div> 
                 </div>
                 
@@ -55,8 +51,8 @@ const Header = () => {
                 <div className="linhaHorizontal mt-2"/>
             </div>
 
-            <SingUpModal open={closeAndOpenModal}/>
-            <Login open={closeAndOpenModal2}/>
+            <Login open={closeAndOpenModal}/>
+            {/* <SingUpModal open={closeAndOpenModal}/> */}
 
         </>
 

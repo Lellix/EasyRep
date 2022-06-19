@@ -21,7 +21,9 @@ const RepMenu = () => {
                     Administração
                 </p>
                 <ul className="menu-list">
-                    <li><a>Moradores</a></li>
+                    <Link to="/Residents">
+                        <a>Moradores</a>
+                    </Link>
                     <Link to="/Rooms">
                         <a>Gerenciar Vagas</a>
                     </Link>
@@ -32,8 +34,12 @@ const RepMenu = () => {
                             <li><a>Mensagens</a></li>
                         </ul>
                     </li>
-                    <li><a>Financeiro</a></li>
-                    <li><a>Tarefas</a></li>
+                    <Link to="/Finances">
+                        <a>Financeiro</a>
+                    </Link>
+                    <Link to="/Chores">
+                        <a>Tarefas</a>
+                    </Link>
                     <li><a>Excluir República</a></li>
                 </ul>
             </aside>

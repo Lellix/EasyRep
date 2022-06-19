@@ -9,12 +9,7 @@ import { Link } from 'react-router-dom';
 
 /*  */
 
-//import "./home.css"
-//import Header from './header'
-//import Footer from './footer'
-//import './signUp.css'
 import {Formik, Form, Field} from 'formik';
-//import* as yup from 'yup';
 import Axios from "axios";
 
 /*  */
@@ -382,7 +377,7 @@ export default function HorizontalLinearStepper() {
                         <Box sx={{ flex: '1 1 auto' }} />
                         
                         <Button onClick={handleNext}>
-                        {activeStep === steps.length - 1 ? 'Cadastrar' : 'Próximo'}
+                            {activeStep === steps.length - 1 ? 'Cadastrar' : 'Próximo'}
                         </Button>
                         
                     </Box>
