@@ -41,7 +41,7 @@ function TableChores() {
     // Defining a state named rows
     // which we can update by calling on setRows function
     const [rows, setRows] = useState([
-        { id: 1, tarefa: ""},
+        { id: 1, tarefa: "", periodo: ""},
     ]);
   
     // Initial states
@@ -63,7 +63,7 @@ function TableChores() {
         setRows([
             ...rows,
             {
-                id: rows.length + 1, tarefa: ""
+                id: rows.length + 1, tarefa: "", periodo: ""
             },
         ]);
         setEdit(true);
@@ -178,6 +178,7 @@ function TableChores() {
           <TableHead>
             <TableRow>
                 <TableCell className="tarefa">Tarefas</TableCell>
+                <TableCell className="tarefa">Período</TableCell>
                 <TableCell className="del" align="center"> </TableCell> {/* Delete column */}
             </TableRow>
           </TableHead>
@@ -195,12 +196,28 @@ function TableChores() {
                             name="tarefa"
                             onChange={(e) => handleInputChange(e, i)}
                           />
+                        </TableCell>
+                        <TableCell padding="none">
+                          <select
+                            style={{ width: "100px" }}
+                            name="periodo"
+                            value={row.periodo}
+                            onChange={(e) => handleInputChange(e, i)}
+                          >
+                            <option value=""></option>
+                            <option value="mensal">mensal</option>
+                            <option value="semanal">semanal</option>
+                            <option value="diario">diário</option>
+                          </select>
                         </TableCell>                      
                       </div>
                     ) : (
                       <div>
                         <TableCell component="th" scope="row" className="tarefa">
                           {row.tarefa}
+                        </TableCell>
+                        <TableCell component="th" scope="row" className="periodo">
+                          {row.periodo}
                         </TableCell>
                         <TableCell
                           component="th"
