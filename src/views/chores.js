@@ -11,7 +11,16 @@ import TableChores from "../components/tableChores"
 
 import DenseTable from "../components/table2";
 
+
 const Chores = () => {
+
+    const getElements= (rows) =>{
+        setRows(rows);
+    }
+
+    const [rows, setRows] = useState([
+        { id: 1, tarefa: "", periodo: ""},
+    ]);
 
     return(
         <>
@@ -22,11 +31,11 @@ const Chores = () => {
                 <RepMenu/>
                 
                 <div className="is-flex is-flex-grow-1 is-flex-direction-column">
-                    <TableChores /> {/* passar moradores por referência */}
+                    <TableChores  elements={getElements}/> {/* passar moradores por referência */}
 
-                    {/* <div className="mt-6 ml-6" style={{width: "80%"}}>
+                    <div className="mt-6 ml-6" style={{width: "80%"}}>
                        < DenseTable rows={rows}/>
-                    </div> */}
+                    </div>
                 </div>
                 
             </nav>

@@ -7,16 +7,6 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-// function createData(name, calories, fat, carbs, protein) {
-//   return { name, calories, fat, carbs, protein };
-// }
-
-// const rows = [
-//   createData('Joao'),
-//   createData('Maria'),
-//   createData('Zequinha'),
-//   createData('Josepha'),
-// ];
 
 const moradores = [
   'Joao', 'Maria', 'Zequinha', 'Josefa', 'Emerson'
@@ -24,14 +14,6 @@ const moradores = [
 export default function DenseTable(props) {
 
   var aux = 0;
-
-  // const returnData=()=>{
-  //   {props.rows.map((row, i) => {
-  //     return (        
-  //       <TableCell>titi</TableCell>
-  //     );
-  //   })}
-  // }
 
   return (
     <TableContainer component={Paper}>
@@ -41,7 +23,7 @@ export default function DenseTable(props) {
             <TableCell></TableCell>
             {props.rows.map((row, i) => {
 
-              console.log(row.conta)
+              //console.log(row.conta)
               return (        
                 <TableCell>{row.conta}</TableCell>
               );

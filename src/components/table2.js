@@ -7,72 +7,63 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-import { formatDistance, subDays } from 'date-fns'
+import { lastDayOfWeek, nextSunday, getMonth, format} from 'date-fns'
 
-formatDistance(subDays(new Date(), 3), new Date(), { addSuffix: true })
-//=> "3 days ago"
 
 const moradores = [
   'Joao', 'Maria', 'Zequinha', 'Josefa', 'Emerson'
 ];
-export default function DenseTable(props) {
 
+const days = [
+  '26/06', '03/07', '10/07', '17/07', '24/07'
+];
+
+export default function DenseTable(props) {
   var aux = 0;
 
-  var data = new Date();
-  var dia = String(data.getDate()).padStart(2, '0');
-  var mes = String(data.getMonth() + 1).padStart(2, '0');
-
-  // const returnData=()=>{
-  //   {props.rows.map((row, i) => {
-  //     return (        
-  //       <TableCell>titi</TableCell>
-  //     );
-  //   })}
-  // }
+  // const day = new Date();
+  // const next = nextSunday(day);
+  // const month = getMonth(day);
 
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
         <TableHead>
-          <TableRow>
+        <TableRow>
             <TableCell></TableCell>
             {props.rows.map((row, i) => {
 
-              console.log(row.tarefa)
               return (        
-                <TableCell>{row.tarefa}</TableCell>
+                <TableCell align="right">{row.tarefa}</TableCell>
               );
               
             })}
-            {/* <TableCell align="right">Aluguel</TableCell> */}
-            <TableCell align="right">total</TableCell>
+
+            <TableCell align="right"> </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
-          {moradores.map((row) => (
+          {days.map((row) => (
             <TableRow
               key={row}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell component="th" scope="row">
-                {row}
-              </TableCell>
+            <TableCell component="th" scope="row">
+              {row}
+            </TableCell>
 
-              {props.rows.map((r, i) => {
+            { props.rows.map((row, i)=>{
+              return(
+                <TableCell> {moradores[Math.floor(Math.random() * moradores.length)]}</TableCell>
+              )
+            })} 
+              
+              {/* {props.rows.map((r, i) => {
                 return (        
-                  <TableCell>{}</TableCell>
+                  <TableCell>{moradores[Math.random() * moradores.length-- | 0]}</TableCell>
                 );
-              })}
+              })} */}
 
-              {/* <TableCell align="right">ALUGUEL</TableCell> */}
-
-              {props.rows.map((r, i) => {
-                aux += parseFloat(r.valor)/moradores.length
-                console.log(parseFloat(r.valor)/moradores.length )
-              })}
-
-            <TableCell align="right">{aux}</TableCell>
             
             <div style={{display: "none"}}>{aux = 0}</div>
 
