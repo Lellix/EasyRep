@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useState } from "react";
+
 import "./css/home.css"
 import './css/repProfile.css'
 import './css/rooms.css'
@@ -8,7 +9,10 @@ import Footer from './footer'
 import RepMenu from "../components/menuRep"
 import TableChores from "../components/tableChores"
 
+import DenseTable from "../components/table2";
+
 const Chores = () => {
+
     return(
         <>
             <Header/>
@@ -17,8 +21,12 @@ const Chores = () => {
 
                 <RepMenu/>
                 
-                <div className="is-flex is-flex-grow-1">
-                    <TableChores />
+                <div className="is-flex is-flex-grow-1 is-flex-direction-column">
+                    <TableChores /> {/* passar moradores por referência */}
+
+                    {/* <div className="mt-6 ml-6" style={{width: "80%"}}>
+                       < DenseTable rows={rows}/>
+                    </div> */}
                 </div>
                 
             </nav>

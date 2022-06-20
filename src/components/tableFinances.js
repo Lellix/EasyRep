@@ -34,7 +34,7 @@ const useStyles = makeStyles({
 
 });
   
-function TableDemo() {
+function TableDemo(props) {
     // Creating style object
     const classes = useStyles();
   
@@ -81,9 +81,10 @@ function TableDemo() {
     const handleSave = () => {
         setEdit(!isEdit);
         setRows(rows);
-        console.log("saved : ", rows);
+        // console.log("saved : ", rows);
         setDisable(true);
         setOpen(true);
+        props.elements(rows);
     };
   
     // The handleInputChange handler can be set up to handle

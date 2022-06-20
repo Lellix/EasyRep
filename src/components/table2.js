@@ -7,16 +7,10 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-// function createData(name, calories, fat, carbs, protein) {
-//   return { name, calories, fat, carbs, protein };
-// }
+import { formatDistance, subDays } from 'date-fns'
 
-// const rows = [
-//   createData('Joao'),
-//   createData('Maria'),
-//   createData('Zequinha'),
-//   createData('Josepha'),
-// ];
+formatDistance(subDays(new Date(), 3), new Date(), { addSuffix: true })
+//=> "3 days ago"
 
 const moradores = [
   'Joao', 'Maria', 'Zequinha', 'Josefa', 'Emerson'
@@ -24,6 +18,10 @@ const moradores = [
 export default function DenseTable(props) {
 
   var aux = 0;
+
+  var data = new Date();
+  var dia = String(data.getDate()).padStart(2, '0');
+  var mes = String(data.getMonth() + 1).padStart(2, '0');
 
   // const returnData=()=>{
   //   {props.rows.map((row, i) => {
@@ -41,9 +39,9 @@ export default function DenseTable(props) {
             <TableCell></TableCell>
             {props.rows.map((row, i) => {
 
-              console.log(row.conta)
+              console.log(row.tarefa)
               return (        
-                <TableCell>{row.conta}</TableCell>
+                <TableCell>{row.tarefa}</TableCell>
               );
               
             })}
@@ -62,9 +60,8 @@ export default function DenseTable(props) {
               </TableCell>
 
               {props.rows.map((r, i) => {
-                var result = parseFloat(r.valor)/moradores.length
                 return (        
-                  <TableCell>{result}</TableCell>
+                  <TableCell>{}</TableCell>
                 );
               })}
 
