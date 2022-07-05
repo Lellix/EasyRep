@@ -27,13 +27,9 @@ const RepMenu = () => {
                     <Link to="/Rooms">
                         <a>Gerenciar Vagas</a>
                     </Link>
-                    <li>
-                        <a className="menu-list">Visitas</a>
-                        <ul>
-                            <li><a>Calendário</a></li>
-                            <li><a>Mensagens</a></li>
-                        </ul>
-                    </li>
+                    <Link to="/">
+                        <a>Visitas</a>
+                    </Link>
                     <Link to="/Finances">
                         <a>Financeiro</a>
                     </Link>

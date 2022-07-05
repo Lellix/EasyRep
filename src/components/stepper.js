@@ -7,6 +7,8 @@ import Button from './../../node_modules/@mui/material/Button';
 import Typography from './../../node_modules/@mui/material/Typography';
 import { Link } from 'react-router-dom';
 
+import { useNavigate, useLocation } from 'react-router-dom';
+
 /*  */
 
 import {Formik, Form, Field} from 'formik';
@@ -19,6 +21,12 @@ const text = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
 const aux = 0;
 
 export default function HorizontalLinearStepper() {
+
+    const location = useLocation();
+    const navigate = useNavigate();
+    function goBack(){
+        navigate.goBack();
+    }
 
     const handleRegister = (values) => {
         
@@ -356,10 +364,10 @@ export default function HorizontalLinearStepper() {
                     <Typography sx={{ mt: 2, mb: 1 }}>
                         Informações Salvas Com Sucesso!
                     </Typography>
-                    <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
+                    {/* <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                         <Box sx={{ flex: '1 1 auto' }} />
                            <Button type="submit">Confirmar Cadastro</Button>
-                    </Box>
+                    </Box> */}
                     </React.Fragment>
                 ) : (
                     <React.Fragment>
