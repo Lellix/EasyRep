@@ -29,12 +29,11 @@ const RepProfile = () => {
                             </div>
 
                             <div className="content is-flex-direction-column is-justify-content-center">
-                                <p className="title is-4">República Um Nome Muito Grande</p>
-                                <div className=" is-flex-direction-row is-justify-content-center">
+                                <p className="title is-5">República Um Nome Muito Grande</p>
+                                <div className=" is-flex is-justify-content-center is-aling-content-center">
                                     <Link to="/RepChangeProfile">
-                                        <button className="button buttonn"> Editar Perfil </button>
+                                        <button className="button "> Editar Perfil </button>
                                     </Link>
-                                    <button className="button buttonn"> Notificações </button>
                                 </div>
                             </div>
                         </div>
