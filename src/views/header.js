@@ -3,7 +3,6 @@ import "./css/header.css"
 
 import "./../components/modal"
 import Login from "./../components/login"
-import SingUpModal from "./../components/signUpModal"
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -26,11 +25,12 @@ const Header = () => {
 
                 <div className="navbar-end pr-5">
                     <div className="navbar-item baloo2">
-                        <button onClick={closeAndOpenModal}
-                                className="button js-modal-trigger is-white baloo2 has-text-weight-bold"  
-                                data-bs-target="signup" style={{color: "#4E4E4E"}}>
-                                    CADASTRE-SE
-                        </button>
+                        <Link to="/SignUp">
+                            <button className="button js-modal-trigger is-white baloo2 has-text-weight-bold"  
+                                    style={{color: "#4E4E4E"}}>
+                                        CADASTRE-SE
+                            </button>
+                        </Link>
                     </div>
 
                     <div className="linhaVertical mt-2"/>
