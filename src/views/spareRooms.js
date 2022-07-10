@@ -38,9 +38,9 @@ const SpareRooms = () => {
                                 Rua Tanana de Tal, n° 3665 <br/>
                                 Bairro Jaojao - São João del Rei<br/><br/>
                                     
-                                <Link to="/RepData">
+                                {/* <Link to="/RepData">
                                     <button className="button"> Informações Gerais </button>
-                                </Link>
+                                </Link> */}
                                 <Link to="/SpareRooms">
                                     <button className="button"> Vagas </button>
                                 </Link>

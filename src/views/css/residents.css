@@ -1,0 +1,11 @@
+.downloadPDF{
+    width: 15%;
+    margin: 0 auto;
+    font-weight: bold;
+    background-color: #fec601;
+    border-color: white;
+}
+
+.tableDiv{
+    width: 100%;
+}

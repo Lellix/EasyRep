@@ -37,9 +37,9 @@ const RepData = () =>{
                                 Rua Tanana de Tal, n° 3665 <br/>
                                 Bairro Jaojao - São João del Rei<br/><br/>
                                     
-                                <Link to="/RepData">
+                                {/* <Link to="/RepData">
                                     <button className="button"> Informações Gerais </button>
-                                </Link>
+                                </Link> */}
                                 <Link to="/SpareRooms">
                                     <button className="button"> Vagas </button>
                                 </Link>
@@ -75,6 +75,19 @@ const RepData = () =>{
                             <tr>
                                 <td>Número de Moradores</td>
                                 <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Telefone 1</td>
+                                <td>32 99988-7766</td>
+                            </tr>
+                            <tr>
+                                <td>Telefone 2</td>
+                                <td>32 99988-5544</td>
+                            </tr>
+                            <tr>
+                                <td>Whatsapp</td>
+                                <td><a href="https://api.whatsapp.com/send?phone=553299988-7766" target="_blank">
+                                    https://api.whatsapp.com/send?phone=553299988-7766</a></td>
                             </tr>
                         </tbody>
                     </table>

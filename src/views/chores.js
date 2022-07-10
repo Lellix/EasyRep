@@ -36,6 +36,8 @@ const Chores = () => {
                     <div className="mt-6 ml-6" style={{width: "80%"}}>
                        < DenseTable rows={rows}/>
                     </div>
+
+                    <button className="button downloadPDF baloo2 mt-5">Enviar Tabelas</button>
                 </div>
                 
             </nav>

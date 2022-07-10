@@ -221,6 +221,23 @@ export default function HorizontalLinearStepper() {
                             </div>
                         </div>
 
+                        {/* CONTATO */}
+                        <div className="is-flex is-flex-direction-row is-justify-content-center">
+                            <div className="field is-flex-grow-1"> 
+                                <div className="control">
+                                    <label>Telefone 1</label>
+                                    <Field name="contato1" className="input is-medium mr-1" type="text" placeholder="telefone"/>
+                                </div>
+                            </div>
+
+                            <div className="field is-flex-grow-1"> 
+                                <div className="control">
+                                    <label>Telefone 2</label>
+                                    <Field name="contato1" className="input is-medium mr-1" type="text" placeholder="telefone"/>
+                                </div>
+                            </div>
+                        </div>
+
                         {/* VALOR E LIMPEZA */}
                         <div className="is-flex is-flex-direction-row is-justify-content-center">
                             <div className="field is-flex-grow-1"> 
@@ -243,6 +260,7 @@ export default function HorizontalLinearStepper() {
                                 </div>
                             </div>
                         </div>
+                        
 
                         {/* RADIO BUTTONS */}
                         <div className="is-flex is-flex-direction-row is-size-5 mt-3">  
@@ -364,10 +382,10 @@ export default function HorizontalLinearStepper() {
                     <Typography sx={{ mt: 2, mb: 1 }}>
                         Informações Salvas Com Sucesso!
                     </Typography>
-                    {/* <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                         <Box sx={{ flex: '1 1 auto' }} />
                            <Button type="submit">Confirmar Cadastro</Button>
-                    </Box> */}
+                    </Box>
                     </React.Fragment>
                 ) : (
                     <React.Fragment>
