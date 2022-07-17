@@ -179,7 +179,7 @@ function TableChores(props) {
           aria-label="a dense table"
         >
           <TableHead>
-            <TableRow className="is-flex is-flex-direction-row">
+            <TableRow className="is-flex is-flex-direction-row full">
                 <TableCell className="coluna">Tarefas</TableCell>
                 <TableCell className="coluna">Frequencia</TableCell>
                 <TableCell className="coluna"> </TableCell> {/* Delete column */}
