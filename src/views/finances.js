@@ -12,11 +12,11 @@ import TableDemo from "../components/tableFinances";
 
 import DenseTable from "../components/table";
 
+
 const Finances = () => {
 
     const getElements= (rows) =>{
         setRows(rows);
-        // console.log(rows);
     }
 
     const [rows, setRows] = useState([

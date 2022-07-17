@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -7,36 +8,49 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-import { lastDayOfWeek, nextSunday, getMonth, format} from 'date-fns'
+import './table.css'
 
 
 const moradores = [
   'Joao', 'Maria', 'Zequinha', 'Josefa', 'Emerson'
 ];
 
-const days = [
-  '26/06', '03/07', '10/07', '17/07', '24/07'
-];
-
 export default function DenseTable(props) {
   var aux = 0;
+  var auxDay = props.day;
+  var auxMonth = props.month;
 
-  // const day = new Date();
-  // const next = nextSunday(day);
-  // const month = getMonth(day);
+  const days = [];
+
+  for(var i=0; i<10; i++){
+    days[i] = auxDay+"\/"+auxMonth;
+    auxDay += 7;
+    if(auxDay > 30 && auxDay != 30 && (auxDay != 31 && (auxMonth == 1 | auxMonth == 3 | auxMonth == 5 | auxMonth == 7 | auxMonth == 8 | auxMonth == 10 | auxMonth == 12))){
+      auxMonth += 1;
+      if (auxDay > 31 && (auxMonth == 1 | auxMonth == 3 | auxMonth == 5 | auxMonth == 7 | auxMonth == 8 | auxMonth == 10 | auxMonth == 12) ) {
+        auxDay -= 31;
+      // } else if (auxDay == 31 && (auxMonth == 1 | auxMonth == 3 | auxMonth == 5 | auxMonth == 7 | auxMonth == 8 | auxMonth == 10 | auxMonth == 12) ) {
+      //   auxDay = 31;
+      } else {
+        auxDay -= 30;
+      }
+    } else if (auxDay > 28 && auxMonth == 2){
+      auxDay -= 28;
+    }
+  }
 
   return (
     <TableContainer component={Paper}>
+      
       <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
         <TableHead>
-        <TableRow>
+          <TableRow>
             <TableCell></TableCell>
             {props.rows.map((row, i) => {
-
               return (        
-                <TableCell align="right">{row.tarefa}</TableCell>
+                <TableCell>{row.tarefa}</TableCell>
               );
-              
+
             })}
 
             <TableCell align="right"> </TableCell>

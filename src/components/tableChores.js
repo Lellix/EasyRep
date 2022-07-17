@@ -16,6 +16,8 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
+
+import './denseTable.css'
   
 // Creating styles
 const useStyles = makeStyles({
@@ -24,17 +26,17 @@ const useStyles = makeStyles({
             borderBottom: "unset",
         },
     },
-    table: {
-        minWidth: 500,
+    // table: {
+    //     minWidth: 500,
         
-    },
+    // },
     snackbar: {
         bottom: "104px",
     },
 
 });
   
-function TableChores() {
+function TableChores(props) {
     // Creating style object
     const classes = useStyles();
   
@@ -83,6 +85,7 @@ function TableChores() {
         console.log("saved : ", rows);
         setDisable(true);
         setOpen(true);
+        props.elements(rows);
     };
   
     // The handleInputChange handler can be set up to handle
@@ -176,28 +179,28 @@ function TableChores() {
           aria-label="a dense table"
         >
           <TableHead>
-            <TableRow>
-                <TableCell className="tarefa">Tarefas</TableCell>
-                <TableCell className="tarefa">Período</TableCell>
-                <TableCell className="del" align="center"> </TableCell> {/* Delete column */}
+            <TableRow className="is-flex is-flex-direction-row">
+                <TableCell className="coluna">Tarefas</TableCell>
+                <TableCell className="coluna">Frequencia</TableCell>
+                <TableCell className="coluna"> </TableCell> {/* Delete column */}
             </TableRow>
           </TableHead>
 
-          <TableBody className="fullsize">
+          <TableBody>
             {rows.map((row, i) => {
               return (
                 <div>
-                  <TableRow className="">
+                  <TableRow className="is-flex  is-flex-direction-row is-justify-itens-center">
                     {isEdit ? (
                       <div>
-                        <TableCell padding="none" className="tarefa">
+                        <TableCell padding="none" className="coluna3">
                           <input
                             value={row.tarefa}
                             name="tarefa"
                             onChange={(e) => handleInputChange(e, i)}
                           />
                         </TableCell>
-                        <TableCell padding="none">
+                        <TableCell padding="none" className="coluna3">
                           <select
                             style={{ width: "100px" }}
                             name="periodo"
@@ -205,25 +208,29 @@ function TableChores() {
                             onChange={(e) => handleInputChange(e, i)}
                           >
                             <option value=""></option>
-                            <option value="mensal">mensal</option>
-                            <option value="semanal">semanal</option>
-                            <option value="diario">diário</option>
+                            <option value="1">1x</option>
+                            <option value="2">2x</option>
+                            <option value="3">3x</option>
+                            <option value="4">4x</option>
+                            <option value="5">5x</option>
+                            <option value="6">6x</option>
+                            <option value="7">diário</option>
                           </select>
                         </TableCell>                      
                       </div>
                     ) : (
-                      <div>
-                        <TableCell component="th" scope="row" className="tarefa">
+                      <div className=" coluna2 is-flex">
+                        <TableCell component="th" scope="row" className="coluna3">
                           {row.tarefa}
                         </TableCell>
-                        <TableCell component="th" scope="row" className="periodo">
+                        <TableCell component="th" scope="row" className="coluna3">
                           {row.periodo}
                         </TableCell>
                         <TableCell
                           component="th"
                           scope="row"
                           align="center"
-                          className="del"
+                          className=""
                         ></TableCell>
                       </div>
                     )}

@@ -7,6 +7,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
+import './table.css'
+
 
 const moradores = [
   'Joao', 'Maria', 'Zequinha', 'Josefa', 'Emerson'
@@ -23,7 +25,6 @@ export default function DenseTable(props) {
             <TableCell></TableCell>
             {props.rows.map((row, i) => {
 
-              //console.log(row.conta)
               return (        
                 <TableCell>{row.conta}</TableCell>
               );

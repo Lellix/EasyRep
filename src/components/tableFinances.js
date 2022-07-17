@@ -16,6 +16,8 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
+
+import './denseTable.css'
   
 // Creating styles
 const useStyles = makeStyles({
@@ -64,7 +66,7 @@ function TableDemo(props) {
             ...rows,
             {
                 id: rows.length + 1, conta: "",
-                valor: "", city: ""
+                valor: ""
             },
         ]);
         setEdit(true);
@@ -178,28 +180,28 @@ function TableDemo(props) {
           aria-label="a dense table"
         >
           <TableHead>
-            <TableRow>
-                <TableCell className="conta">Conta</TableCell>
-                <TableCell className="valor">Valor</TableCell>
-                <TableCell className="del" align="center"> </TableCell> {/* Delete column */}
+            <TableRow className="is-flex is-flex-direction-row">
+                <TableCell className="coluna">Conta</TableCell>
+                <TableCell className="coluna">Valor</TableCell>
+                <TableCell className="coluna" align="center"> </TableCell> {/* Delete column */}
             </TableRow>
           </TableHead>
 
-          <TableBody className="fullsize">
+          <TableBody>
             {rows.map((row, i) => {
               return (
                 <div>
-                  <TableRow className="">
+                  <TableRow className="is-flex  is-flex-direction-row is-justify-itens-center">
                     {isEdit ? (
-                      <div>
-                        <TableCell padding="none" className="conta">
+                      <div className=" coluna2 is-flex">
+                        <TableCell padding="none" className="coluna3">
                           <input
                             value={row.conta}
                             name="conta"
                             onChange={(e) => handleInputChange(e, i)}
                           />
                         </TableCell>
-                        <TableCell padding="none" className="valor">
+                        <TableCell padding="none" className="coluna3">
                           <input
                             value={row.valor}
                             name="valor"
@@ -208,11 +210,11 @@ function TableDemo(props) {
                         </TableCell>
                       </div>
                     ) : (
-                      <div>
-                        <TableCell component="th" scope="row" className="conta">
+                      <div className=" coluna2 is-flex">
+                        <TableCell component="th" scope="row" className="coluna3">
                           {row.conta}
                         </TableCell>
-                        <TableCell component="th" scope="row" className="valor">
+                        <TableCell component="th" scope="row" className="coluna3">
                           {row.valor}
                         </TableCell>
                         <TableCell
